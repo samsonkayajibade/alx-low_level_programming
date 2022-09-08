@@ -3,11 +3,11 @@
 
 
 /**
- *
  * main - Entry point
  *
+ * Description:using main function
+ * this program is used to print size
  * Return: 0
- *
  */
 
 
