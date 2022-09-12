@@ -5,21 +5,25 @@
  */
 int main(void)
 {
-	int t;
-	int m;
+	int one;
+	int ten;
+	int hundred;
 
-	for (t = 0; t < 9; t++)
+	for (hundred = '0'; hundred <= '9'; hundred++) /*hundreds place*/
 	{
-		for (m = t + 1; m < 10; m++)
+		for (ten = (hundred + 1); ten <= '9'; ten++) /*tens=100s+1*/
 		{
-			putchar((t % 10) + '0');
-			putchar((m % 10) + '0');
-
-			if (t == 8 && m == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			for (one = (ten + 1); one <= '9'; one++) /*ones*/
+			{
+				putchar(hundred);
+				putchar(ten);
+				putchar(one);
+				if (hundred != '7' || ten != '8' || one != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
