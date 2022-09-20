@@ -1,4 +1,3 @@
-320 Bytes
 #include "main.h"
 
 /**
